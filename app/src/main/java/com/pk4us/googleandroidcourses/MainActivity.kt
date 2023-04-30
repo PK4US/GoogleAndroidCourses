@@ -8,6 +8,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
 import com.pk4us.googleandroidcourses.jetpackcomposeforandroiddevelopers.composeessentials.MySootheApp
+import com.pk4us.googleandroidcourses.jetpackcomposeforandroiddevelopers.composeessentials.WellnessScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,9 +20,9 @@ class MainActivity : ComponentActivity() {
             ) {
 //                MyApp(modifier = Modifier.fillMaxSize())
 
-                MySootheApp()
+//                MySootheApp()
 
-//                WellnessScreen()
+                WellnessScreen()
             }
         }
     }
