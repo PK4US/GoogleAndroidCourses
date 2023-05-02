@@ -7,22 +7,26 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
-import com.pk4us.googleandroidcourses.jetpackcomposeforandroiddevelopers.composeessentials.MySootheApp
-import com.pk4us.googleandroidcourses.jetpackcomposeforandroiddevelopers.composeessentials.WellnessScreen
+import com.pk4us.googleandroidcourses.jetpackcomposeforandroiddevelopers.composeessentials.Home
+import com.pk4us.googleandroidcourses.ui.theme.MyTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Surface(
-                modifier = Modifier.fillMaxSize(),
-                color = MaterialTheme.colors.background
-            ) {
+            MyTheme {
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colors.background
+                ) {
 //                MyApp(modifier = Modifier.fillMaxSize())
 
 //                MySootheApp()
 
-                WellnessScreen()
+//                WellnessScreen()
+
+                    Home()
+                }
             }
         }
     }
